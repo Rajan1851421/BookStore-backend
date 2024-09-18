@@ -11,7 +11,9 @@ router.post('/register', registerUser);
 router.post('/login', loginUser);
 
 //delete user route
-router.delete('/user:/id',deleteUserById);
+
+router.delete('/user/:id', deleteUserById);
+
 
 // get all user
 router.get('/user', fetchAllUser);
